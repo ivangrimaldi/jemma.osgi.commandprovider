@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="it.ismb.jemma.deviceapi.command">
+   <implementation class="it.ismb.jemma.deviceapi.command.ApiCommandProvider"/>
+   <reference bind="bindIAppliancesProxy" cardinality="1..1" interface="org.energy_home.jemma.ah.hac.lib.ext.IAppliancesProxy" name="IAppliancesProxy" policy="dynamic" unbind="unbindIAppliancesProxy"/>
+   <property name="osgi.command.scope" type="String" value="api"/>
+   <service>
+      <provide interface="org.eclipse.osgi.framework.console.CommandProvider"/>
+   </service>
+</scr:component>
