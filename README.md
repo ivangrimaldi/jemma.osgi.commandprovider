@@ -28,7 +28,7 @@ A simple command provider for Jemma APIs
 
 ####Get Multiplier
 
-	invokeClusterMethod ah.app.3521399293210526034 1 org.energy_home.jemma.ah.cluster.zigbee.metering.SimpleMeteringServer getDivisor
+	invokeClusterMethod ah.app.3521399293210526034 1 org.energy_home.jemma.ah.cluster.zigbee.metering.SimpleMeteringServer getMultiplier
 
 ####GetUnitOfMeasure
 
